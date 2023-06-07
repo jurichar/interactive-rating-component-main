@@ -1,3 +1,36 @@
+$bgButton: rgb(250 119 22);
+$bgCircles: rgb(51, 61, 70);
+$bgPrincipal: rgb(32 39 48);
+$text: hsl(0, 0%, 100%);
+$paragraph: rgb(158, 160, 163);
+
+$fontFamily: 'Overpass', sans-serif;
+$fontLight: 400;
+$fontBold: 700;
+$fontSize: 15px;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
 
 body {
     main {
@@ -5,7 +38,21 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem;
+        font-size: $fontSize;
+        font-family: $fontFamily;
+        font-weight: $fontLight;
+        color: $text;
         .Component {
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: $bgPrincipal;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 357px;
+            padding: 30px;
             .sr-only {
                 visibility: hidden;
                 margin: 0;
@@ -16,38 +63,91 @@ body {
             .Rating_start {
                 display: flex;
                 flex-direction: column;
-                .Image {
-
+                text-align: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 1rem;
+                .Image_box {
+                    display: flex;
+                    height: 3rem;
+                    width: 3rem;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bgCircles;
+                    padding: 0.8rem;
+                    border-radius: 50%;
+                    .Image {
+                    }
                 }
                 .Title {
-
+                    padding-top: 1rem;
+                    color: $text;
+                    text-align: left;
                 }
                 .Text {
-                    
+                    text-align: left;
+                    font-size: 15px;
+                    color: $paragraph;
                 }
                 .Notation {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 10px;
+                    color: $paragraph;
+                    .Image_box {
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $bgButton;
+                            color: $text;
+                        }
+                    }
                     .highlight {
-                        color: #FFC107;
+                        background-color: $paragraph;
+                        color: $text;
                     }
 
                 }
                 .Summit {
-
+                    background-color: $bgButton;
+                    color: $text;
+                    border: none;
+                    height: 3rem;
+                    border-radius: 10rem;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $text;
+                        color: $bgButton;
+                    }
                 }
             }
             .Thanks {
                 display: none;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-between;
                 .Image {
-                    
+                    width: 200px;
+                    margin: auto;
                 }
                 .Thanks_title {
-
+                    margin: 2rem 0;
+                    align-self: center;
+                    font-size: 15px;
+                    padding: 0.5rem 1.5rem;
+                    width: fit-content;
+                    background-color: $bgCircles;
+                    color: $bgButton;
+                    text-align: center;
+                    border-radius: 10rem;
                 }
                 .Title {
 
                 }
                 .Text {
-
+                    color: $paragraph;
                 }
             }
         }

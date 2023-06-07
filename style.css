@@ -1,8 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 body main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+body main .Component {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(32, 39, 48);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 357px;
+  padding: 30px;
 }
 body main .Component .sr-only {
   visibility: hidden;
@@ -14,12 +59,84 @@ body main .Component .sr-only {
 body main .Component .Rating_start {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+body main .Component .Rating_start .Image_box {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 61, 70);
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+body main .Component .Rating_start .Title {
+  padding-top: 1rem;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+}
+body main .Component .Rating_start .Text {
+  text-align: left;
+  font-size: 15px;
+  color: rgb(158, 160, 163);
+}
+body main .Component .Rating_start .Notation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  color: rgb(158, 160, 163);
+}
+body main .Component .Rating_start .Notation .Image_box:hover {
+  cursor: pointer;
+  background-color: rgb(250, 119, 22);
+  color: hsl(0, 0%, 100%);
 }
 body main .Component .Rating_start .Notation .highlight {
-  color: #FFC107;
+  background-color: rgb(158, 160, 163);
+  color: hsl(0, 0%, 100%);
+}
+body main .Component .Rating_start .Summit {
+  background-color: rgb(250, 119, 22);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  height: 3rem;
+  border-radius: 10rem;
+}
+body main .Component .Rating_start .Summit:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(250, 119, 22);
 }
 body main .Component .Thanks {
   display: none;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+body main .Component .Thanks .Image {
+  width: 200px;
+  margin: auto;
+}
+body main .Component .Thanks .Thanks_title {
+  margin: 2rem 0;
+  align-self: center;
+  font-size: 15px;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  background-color: rgb(51, 61, 70);
+  color: rgb(250, 119, 22);
+  text-align: center;
+  border-radius: 10rem;
+}
+body main .Component .Thanks .Text {
+  color: rgb(158, 160, 163);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@ notes.forEach((note, index) => {
     note.addEventListener('click', () => {
         rating = index;
         for (let i = 0; i < notes.length ; i++)
-            if (i <= rating)
+            if (i == rating)
                 notes[i].classList.add('highlight');
             else
                 notes[i].classList.remove('highlight');
