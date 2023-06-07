@@ -1,0 +1,25 @@
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .Component .sr-only {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+body main .Component .Rating_start {
+  display: flex;
+  flex-direction: column;
+}
+body main .Component .Rating_start .Notation .highlight {
+  color: #FFC107;
+}
+body main .Component .Thanks {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

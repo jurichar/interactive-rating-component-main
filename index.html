@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Rating state start -->
+    <link rel="stylesheet" href="./style.css" />
 
-  How did we do?
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  <body>
+    <main>
+      <div class="Component">
+        <h1 class="sr-only">rating component</h1>
 
-  1 2 3 4 5
+        <div class="Rating_start">
+          <img src="./images/icon-star.svg" alt="Rating" class="Image" />
+          <h2 class="Title">How did we do?</h2>
 
-  Submit
+          <p class="Text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-  <!-- Rating state end -->
+          <div class="Notation">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
 
-  <!-- Thank you state start -->
+          <button class="Summit">Submit</button>
+        </div>
 
-  You selected <!-- Add rating here --> out of 5
+        <!-- Thank you state start -->
+        <div class="Thanks">
+          <img src="./images/illustration-thank-you.svg" alt="Thank you" class="Image" />
+          <h2 class="Thanks_title">
+            You selected
+            <span class="Thanks_title--rating">4</span>
+            out of 5
+          </h2>
 
-  Thank you!
+          <h2 class="Title">Thank you!</h2>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <p class="Text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>

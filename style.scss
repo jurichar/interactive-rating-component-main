@@ -1,0 +1,55 @@
+
+body {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Component {
+            .sr-only {
+                visibility: hidden;
+                margin: 0;
+                padding: 0;
+                width: 0;
+                height: 0;
+            }
+            .Rating_start {
+                display: flex;
+                flex-direction: column;
+                .Image {
+
+                }
+                .Title {
+
+                }
+                .Text {
+                    
+                }
+                .Notation {
+                    .highlight {
+                        color: #FFC107;
+                    }
+
+                }
+                .Summit {
+
+                }
+            }
+            .Thanks {
+                display: none;
+                .Image {
+                    
+                }
+                .Thanks_title {
+
+                }
+                .Title {
+
+                }
+                .Text {
+
+                }
+            }
+        }
+     }
+}
